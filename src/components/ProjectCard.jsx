@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, openPreview }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -15,7 +15,6 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div className="project" data-aos="zoom-in" data-aos-delay={project.delay}>
-      {/* Image Carousel */}
       <div className="carousel">
         {project.images.map((img, i) => (
           <img
@@ -23,6 +22,7 @@ const ProjectCard = ({ project }) => {
             src={img}
             className={`carousel-img ${i === currentIndex ? "active" : ""}`}
             alt={`Slide ${i + 1}`}
+            onClick={() => openPreview(project.images, i)} // 👈 Trigger preview modal
           />
         ))}
         <button className="carousel-btn prev" onClick={prevSlide}>
