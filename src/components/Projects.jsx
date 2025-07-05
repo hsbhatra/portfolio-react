@@ -66,33 +66,45 @@ const projects = [
     ],
   },
   {
-    title: "Number Guessing Game",
+    title: "Boom Guess - Guess the correct number and BOOM, instant dopamine!",
     tags: "ReactJS • JavaScript • CSS • LocalStorage",
     description:
-      "A responsive number guessing game with login, timer, high score tracking, and protected routes — built using ReactJS.",
+      "A responsive number guessing game with Authentication, timer, high score tracking, and protected routes — built using ReactJS.",
     github: "https://github.com/hsbhatra/number-guessing-game",
     live: "https://boom-guess.netlify.app/",
     delay: 500,
     images: [
-      "/assets/images/projects/number-guess/home.png",
-      "/assets/images/projects/number-guess/login.png",
-      "/assets/images/projects/number-guess/signup.png",
-      "/assets/images/projects/number-guess/result.png",
+      "/assets/images/projects/number-guess/boom-guess_1.jpg",
+      "/assets/images/projects/number-guess/boom-guess_Login.jpg",
+      "/assets/images/projects/number-guess/boom-guess_Signup.jpg",
+      "/assets/images/projects/number-guess/boom-guess_ForgotPassword.jpg",
+      "/assets/images/projects/number-guess/boom-guess_GamePage.jpg",
     ],
   },
   {
-    title: "Scientific Calculator",
+    title: "Calqulix - Scientific Calculator",
     tags: "ReactJS • JavaScript • CSS • mathjs • Local Storage",
     description:
       "A modern web-based scientific calculator supporting advanced functions like trigonometry, logarithms, history tracking, and offline installation.",
-    github: "https://github.com/hsbhatra/scientific-calculator", // replace if needed
-    live: "https://your-calculator.netlify.app/", // replace with actual Netlify link
+    github: "https://github.com/hsbhatra/scientific-calculator", 
+    live: "https://calqulix.netlify.app/", 
     delay: 500,
     images: [
-      "/assets/images/projects/scientific-calculator/home.png",
-      "/assets/images/projects/scientific-calculator/functions.png",
-      "/assets/images/projects/scientific-calculator/history.png",
-      "/assets/images/projects/scientific-calculator/mobile-view.png",
+      "/assets/images/projects/scientific-calculator/calqulix_1.jpg",
+      "/assets/images/projects/scientific-calculator/calqulix_main.jpg",
+    ],
+  },
+  {
+    title: "Tempix - Feel the Forecast",
+    tags: "ReactJS • JavaScript • CSS • OpenWeatherMap API",
+    description:
+      "A sleek weather app that provides real-time weather updates, forecasts, and detailed climate information for any location using the OpenWeatherMap API.",
+    github: "https://github.com/hsbhatra/weather-app", 
+    live: "https://feel-the-forecast.netlify.app/", 
+    delay: 500,
+    images: [
+      "/assets/images/projects/tempix/Tempix_1.jpg",
+      "/assets/images/projects/tempix/Tempix_main.jpg",
     ],
   },
 ];

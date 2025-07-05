@@ -68,12 +68,6 @@ const stackData = [
     delay: 700,
   },
   {
-    name: 'JavaScript',
-    label: 'Programming Language',
-    icon: '/assets/images/icons/javascript.png',
-    delay: 600,
-  },
-  {
     name: 'HTML',
     label: 'Markup Language',
     icon: '/assets/images/icons/html.png',
@@ -86,10 +80,28 @@ const stackData = [
     delay: 1000,
   },
   {
-    name: 'MySQL',
-    label: 'SQL Database',
-    icon: '/assets/images/icons/mysql.png',
-    delay: 1100,
+    name: 'JavaScript',
+    label: 'Programming Language',
+    icon: '/assets/images/icons/javascript.png',
+    delay: 600,
+  },
+  {
+    name: 'React JS',
+    label: 'Frontend Library',
+    icon: '/assets/images/icons/react.png',
+    delay: 900,
+  },
+  {
+    name: 'Node JS',
+    label: 'Backend Runtime Environment',
+    icon: '/assets/images/icons/nodejs.png',
+    delay: 1000,
+  },
+  {
+    name: 'Express JS',
+    label: 'Node.js Framework',
+    icon: '/assets/images/icons/express.png',
+    delay: 1050,
   },
   {
     name: 'MongoDB',
@@ -98,10 +110,22 @@ const stackData = [
     delay: 1100,
   },
   {
+    name: 'MySQL',
+    label: 'SQL Database',
+    icon: '/assets/images/icons/mysql.png',
+    delay: 1100,
+  },
+  {
     name: 'Github',
     label: 'Version Control Platform',
     icon: '/assets/images/icons/github.png',
     delay: 1200,
+  },
+  {
+    name: 'Postman',
+    label: 'API Testing Tool',
+    icon: '/assets/images/icons/postman.png',
+    delay: 1300,
   },
   {
     name: 'VS Code',
