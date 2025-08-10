@@ -28,7 +28,7 @@ const projects = [
     description:
       "A full-featured social platform with real-time messaging and secure authentication. Includes user feed, profiles, posts (CRUD, like, comment), and chat via WebSocket.",
     github: "https://github.com/hsbhatra/DevGluck–Social-Media-App",
-    live: null,
+    live: "https://dev-gluck.vercel.app/",
     delay: 400,
       images: [
         "/assets/images/projects/devgluck/SignupPage.png",
