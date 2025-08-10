@@ -24,7 +24,7 @@ const Hero = () => {
           </a>
 
           <a
-            href="/assets/doc/Himanshu_Sharma_Full_Stack_Resume.pdf"
+            href="/assets/doc/Himanshu_Sharma_FSD_Resume.pdf"
             className="primary-button"
             data-aos="fade-up"
             data-aos-delay="400"
