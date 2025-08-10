@@ -61,12 +61,12 @@ const stackData = [
     icon: '/assets/images/icons/java.png',
     delay: 500,
   },
-  {
-    name: 'Spring Boot',
-    label: 'Java Framework',
-    icon: '/assets/images/icons/spring-boot.png',
-    delay: 700,
-  },
+  // {
+  //   name: 'Spring Boot',
+  //   label: 'Java Framework',
+  //   icon: '/assets/images/icons/spring-boot.png',
+  //   delay: 700,
+  // },
   {
     name: 'HTML',
     label: 'Markup Language',
@@ -131,6 +131,12 @@ const stackData = [
     name: 'VS Code',
     label: 'Code Editor',
     icon: '/assets/images/icons/vscode.png',
+    delay: 1400,
+  },
+  {
+    name: 'Cursor AI',
+    label: 'AI-Powered Coding Assistant IDE',
+    icon: '/assets/images/icons/cursor.png',
     delay: 1400,
   },
 ];
