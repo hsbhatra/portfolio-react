@@ -23,11 +23,11 @@ const projects = [
       ],
   },
   {
-    title: "DevGluck — Full-Stack Social Media App",
+    title: "DevGluck — Social Media App",
     tags: "MongoDB • Express.js • React.js • Node.js • Socket.io • JWT • Bcrypt",
     description:
       "A full-featured social platform with real-time messaging and secure authentication. Includes user feed, profiles, posts (CRUD, like, comment), and chat via WebSocket.",
-    github: "https://github.com/hsbhatra/DevGluck–Social-Media-App",
+    github: "https://github.com/hsbhatra/DevGluck--Social-Media-App",
     live: "https://dev-gluck.vercel.app/",
     delay: 400,
       images: [
@@ -71,7 +71,7 @@ const projects = [
     tags: "HTML • CSS • JavaScript • Phaser.js • Cursor AI",
     description:
       "A Mario-style 2D platformer with physics, collision detection, and player controls, built using Phaser.js and AI-enhanced development via Cursor AI.",
-    github: "https://github.com/hsbhatra/Mario2D",
+    github: "https://github.com/hsbhatra/Mario_2D",
     live: "https://mario-2d.netlify.app/",
     delay: 600,
       images: [
