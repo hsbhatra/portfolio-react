@@ -50,8 +50,8 @@ const projects = [
     live: null,
     delay: 500,
     images: [
-      "/assets/images/projects/url-shrinker/home.png",
-      "/assets/images/projects/url-shrinker/shorten.png",
+      "/assets/images/projects/url-shrinker/ShorteningLongUrl.png",
+      "/assets/images/projects/url-shrinker/RedirectingToLongUrlUsingShortUrl.png",
     ],
   },
   {
