@@ -67,6 +67,24 @@ const stackData = [
   //   icon: '/assets/images/icons/spring-boot.png',
   //   delay: 700,
   // },
+  // {
+  //   name: 'C#',
+  //   label: 'Programming Language',
+  //   icon: '/assets/images/icons/csharp.jpg',
+  //   delay: 700,
+  // },
+  // {
+  //   name: '.NET',
+  //   label: 'Backend Framework',
+  //   icon: '/assets/images/icons/dotnet.jpg',
+  //   delay: 750,
+  // },
+  // {
+  //   name: 'Angular',
+  //   label: 'Frontend Framework',
+  //   icon: '/assets/images/icons/angular.jpg',
+  //   delay: 850,
+  // },
   {
     name: 'HTML',
     label: 'Markup Language',
@@ -104,6 +122,24 @@ const stackData = [
     delay: 1050,
   },
   {
+    name: 'Three.js',
+    label: '3D Graphics Library',
+    icon: '/assets/images/icons/threejs.png',
+    delay: 1075,
+  },
+  {
+    name: 'Redis',
+    label: 'In-Memory Data Store',
+    icon: '/assets/images/icons/redis.png',
+    delay: 1080,
+  },
+  {
+    name: 'JWT',
+    label: 'Authentication',
+    icon: '/assets/images/icons/jwt.png',
+    delay: 1085,
+  },
+  {
     name: 'MongoDB',
     label: 'NoSQL Database',
     icon: '/assets/images/icons/mongo-db.png',
@@ -138,6 +174,18 @@ const stackData = [
     label: 'AI-Powered Coding Assistant IDE',
     icon: '/assets/images/icons/cursor.png',
     delay: 1400,
+  },
+  {
+    name: 'Twilio',
+    label: 'SMS Integration',
+    icon: '/assets/images/icons/twilio.png',
+    delay: 1500,
+  },
+  {
+    name: 'SendGrid',
+    label: 'Email Integration',
+    icon: '/assets/images/icons/sendgrid.png',
+    delay: 1550,
   },
 ];
 

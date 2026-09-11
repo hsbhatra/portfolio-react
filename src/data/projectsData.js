@@ -1,5 +1,17 @@
 const projects = [
   {
+    title: "ATMOS Gym — Full-Stack Gym Management Platform",
+    tags: "React 18 • Vite • Three.js • Node.js • Express.js • MongoDB • Razorpay",
+    description:
+      "A full-stack gym management platform with Razorpay payment integration (online + admin-managed offline/cash, idempotent webhooks), a planSnapshot pattern for accurate historical billing, and automated membership lifecycle handling via node-cron.",
+    github: "https://github.com/hsbhatra/ATMOS-Gym-App",
+    live: "https://atmos-gym-kota-test.netlify.app",
+    delay: 200,
+    images: [
+      // add your screenshot paths here, e.g. "/assets/images/projects/atmos-gym/HomePage.png"
+    ],
+  },
+  {
     title: "Attendify - Track attendance efficiently",
     tags: "Python • Django • JavaScript • Tailwind CSS",
     description:

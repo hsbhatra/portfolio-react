@@ -35,9 +35,15 @@ const Experience = () => {
 };
 
 const experiences = [
+    // {
+    //     title: 'Software Developer Intern at AVICS',
+    //     description: 'Assisting in building scalable web applications using Java, Spring Boot, C#, .NET, and Angular, focusing on enhancing user engagement and system performance.',
+    //     icon: '/assets/images/exp1.svg',
+    //     delay: 600,
+    // },
     {
-        title: 'Software Developer Intern at AVICS',
-        description: 'Assisting in building scalable web applications using Java, Spring Boot, C#, .NET, and Angular, focusing on enhancing user engagement and system performance.',
+        title: 'Software Developer Intern at AVICS Pvt. Ltd. (Feb 2025 – Sept 2025)',
+        description: 'Built RESTful APIs and Angular components for AVICS Health, a Hospital Management System, using C# and .NET. Implemented search algorithms for patient/appointment data that reduced support queries by 18%, and designed OPD/IPD and monthly/annual reports.',
         icon: '/assets/images/exp1.svg',
         delay: 600,
     },
