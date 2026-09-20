@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
-import ImagePreviewModal from "./ImagePreviewModal"; 
-import projects from "../data/projectsData";
+import ImagePreviewModal from "./ImagePreviewModal";
+import { getProjects } from "../api/api";
 
 const Projects = () => {
+  const [projects, setProjects] = useState([]);
   const [previewOpen, setPreviewOpen] = useState(false);
   const [previewImages, setPreviewImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    getProjects()
+      .then(setProjects)
+      .catch(() => setProjects([]));
+  }, []);
 
   const openPreview = (images, index) => {
     setPreviewImages(images);
@@ -41,15 +48,14 @@ const Projects = () => {
         <div className="projects-content">
           {projects.map((project, index) => (
             <ProjectCard
-              key={index}
-              project={project}
-              openPreview={openPreview} // 👈 Pass the click handler
+              key={project._id || index}
+              project={{ ...project, delay: 200 + index * 100 }}
+              openPreview={openPreview}
             />
           ))}
         </div>
       </div>
 
-      {/* 🔍 Preview Modal Section */}
       <ImagePreviewModal
         images={previewImages}
         index={currentIndex}

@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { getExperience } from '../api/api';
 
 const Experience = () => {
+  const [experiences, setExperiences] = useState([]);
+
+  useEffect(() => {
+    getExperience()
+      .then(setExperiences)
+      .catch(() => setExperiences([]));
+  }, []);
+
   return (
     <section className="experience" id="experience">
       <div className="container">
@@ -14,16 +23,23 @@ const Experience = () => {
             Journey through my <span>work experience</span>
           </h2>
           <p className="section-desc" data-aos="fade-up" data-aos-delay="500">
-            Key milestones and roles that have shaped my skills, challenges I’ve overcome, and the impact I've made along the way.
+            Key milestones and roles that have shaped my skills, challenges I've overcome, and the impact I've made along the way.
           </p>
         </div>
 
         <div className="experience-content">
           {experiences.map((exp, index) => (
-            <div className="minimal-card" key={index} data-aos="zoom-in" data-aos-delay={exp.delay}>
+            <div className="minimal-card" key={exp._id || index} data-aos="zoom-in" data-aos-delay={600 + index * 100}>
               <img src={exp.icon} alt="experience icon" className="img-fluid" />
               <div className="content">
-                <h3>{exp.title}</h3>
+                <h3>
+                  {exp.title}
+                  {(exp.startDate || exp.endDate) && (
+                    <span style={{ display: 'block', fontSize: '0.8em', fontWeight: 400 }}>
+                      {[exp.startDate, exp.endDate].filter(Boolean).join(' – ')}
+                    </span>
+                  )}
+                </h3>
                 <p>{exp.description}</p>
               </div>
             </div>
@@ -33,27 +49,5 @@ const Experience = () => {
     </section>
   );
 };
-
-const experiences = [
-    // {
-    //     title: 'Software Developer Intern at AVICS',
-    //     description: 'Assisting in building scalable web applications using Java, Spring Boot, C#, .NET, and Angular, focusing on enhancing user engagement and system performance.',
-    //     icon: '/assets/images/exp1.svg',
-    //     delay: 600,
-    // },
-    {
-        title: 'Software Developer Intern at AVICS Pvt. Ltd. (Feb 2025 – Sept 2025)',
-        description: 'Built RESTful APIs and Angular components for AVICS Health, a Hospital Management System, using C# and .NET. Implemented search algorithms for patient/appointment data that reduced support queries by 18%, and designed OPD/IPD and monthly/annual reports.',
-        icon: '/assets/images/exp1.svg',
-        delay: 600,
-    },
-    // Add more experiences as needed
-    // {
-    //   title: 'Freelance Web Developer',
-    //   description: 'Designed and implemented responsive web solutions for various clients, prioritizing usability and robust functionality.',
-    //   icon: '/assets/images/exp2.svg',
-    //   delay: 700,
-    // },
-];
 
 export default Experience;
